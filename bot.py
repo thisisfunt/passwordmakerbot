@@ -10,8 +10,8 @@ def send_welcome(message):
 
 @bot.message_handler(content_types=["text"])
 def send_info(message):
-    if(message.text.split(" ")[0] == "make"):
-        lenght = int(message.text.split(" ")[1])
+    if(message.text.lower().split(" ")[0] == "make"):
+        lenght = int(message.text.lower().split(" ")[1])
         password = ""
         i = 0
         while(i < lenght):
