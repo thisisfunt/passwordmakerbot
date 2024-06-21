@@ -1,7 +1,8 @@
 import telebot
 import random
+import config
 
-bot = telebot.TeleBot("1203250218:AAE6415lw9GPMNFDkCtH4xwt0mg94dqckDo")
+bot = telebot.TeleBot(config.SECRETKEY)
 s = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 
 @bot.message_handler(commands=['start'])
